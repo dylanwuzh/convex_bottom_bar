@@ -215,6 +215,7 @@ class ConvexAppBar extends StatefulWidget {
             activeColor: activeColor ?? Colors.white,
             backgroundColor: backgroundColor ?? Colors.blue,
             curve: curve ?? Curves.easeInOut,
+            curveSize: curveSize ?? CONVEX_SIZE,
           ),
           onTap: onTap,
           onTapNotify: onTabNotify,

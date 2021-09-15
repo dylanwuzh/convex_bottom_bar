@@ -35,11 +35,12 @@ DelegateBuilder supportedStyle(
   required Color activeColor,
   required Color backgroundColor,
   required Curve curve,
+  double curveSize = 0,
 }) {
   assert(items.isNotEmpty, 'items should not be empty');
   assert(
       ((style == TabStyle.fixed || style == TabStyle.fixedCircle) &&
-              items.length.isOdd) ||
+              items.length.isOdd && curveSize > 0) ||
           (style != TabStyle.fixed && style != TabStyle.fixedCircle),
       'item count should be an odd number when using fixed/fixedCircle');
   DelegateBuilder builder;
