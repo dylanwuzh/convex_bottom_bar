@@ -16,6 +16,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../bar.dart';
 import '../item.dart';
 import 'blend_image_icon.dart';
 import 'inner_builder.dart';
@@ -41,7 +42,7 @@ class TextInTabStyle extends InnerBuilder {
     if (active) {
       var textStyle = style.textStyle(activeColor);
       return Container(
-        padding: const EdgeInsets.only(bottom: 2),
+        padding: EdgeInsets.only(bottom: style.paddingBottom ?? PADDING_BOTTOM),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

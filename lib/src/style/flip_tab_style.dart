@@ -16,6 +16,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../bar.dart';
 import '../item.dart';
 import 'blend_image_icon.dart';
 import 'inner_builder.dart';
@@ -57,7 +58,7 @@ class FlipTabStyle extends InnerBuilder {
         duration: Duration(milliseconds: 500),
         height: style.activeIconMargin + style.activeIconSize,
         bottomChild: Container(
-          padding: EdgeInsets.only(bottom: 2),
+          padding: EdgeInsets.only(bottom: style.paddingBottom ?? PADDING_BOTTOM),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: children,

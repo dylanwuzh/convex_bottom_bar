@@ -77,6 +77,8 @@ abstract class StyleHook {
   /// to update the height of bar too.
   TextStyle textStyle(Color color);
 
+  double? get paddingBottom;
+
   /// For styles with both ICON and label, omit the Text widget when label is null/empty
   bool get hideEmptyLabel {
     return true;

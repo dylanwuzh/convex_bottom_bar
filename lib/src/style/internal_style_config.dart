@@ -40,4 +40,9 @@ class InternalStyle extends StyleHook {
   TextStyle textStyle(Color color) {
     return TextStyle(color: color);
   }
+
+  @override
+  double? get paddingBottom {
+    return null;
+  }
 }

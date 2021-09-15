@@ -16,6 +16,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../bar.dart';
 import '../item.dart';
 import 'blend_image_icon.dart';
 import 'inner_builder.dart';
@@ -57,7 +58,7 @@ class ReactTabStyle extends InnerBuilder {
             .add(Text(item.title ?? '', style: style.textStyle(activeColor)));
       }
       return Container(
-        padding: const EdgeInsets.only(bottom: 2),
+        padding: EdgeInsets.only(bottom: style.paddingBottom ?? PADDING_BOTTOM),
         child: Column(
           mainAxisAlignment:
               noLabel ? MainAxisAlignment.center : MainAxisAlignment.end,

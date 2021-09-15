@@ -48,6 +48,9 @@ const double ACTION_INNER_BUTTON_SIZE = 40;
 /// Default elevation of [ConvexAppBar].
 const double ELEVATION = 2;
 
+/// Default padding bottom of [ConvexAppBar].
+const double PADDING_BOTTOM = 2;
+
 /// Tab styles.
 enum TabStyle {
   /// Convex shape fixed center, see [FixedTabStyle].

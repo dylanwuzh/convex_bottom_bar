@@ -80,4 +80,9 @@ class Style extends StyleHook {
   double get activeIconMargin {
     return 1;
   }
+
+  @override
+  double? get paddingBottom {
+    return 4;
+  }
 }

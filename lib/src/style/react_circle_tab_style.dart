@@ -78,7 +78,7 @@ class ReactCircleTabStyle extends InnerBuilder {
       children.add(Text(item.title ?? '', style: textStyle));
     }
     return Container(
-      padding: EdgeInsets.only(bottom: 2),
+      padding: EdgeInsets.only(bottom: style.paddingBottom ?? PADDING_BOTTOM),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: children,
