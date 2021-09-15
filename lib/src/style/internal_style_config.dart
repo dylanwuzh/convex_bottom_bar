@@ -42,5 +42,7 @@ class InternalStyle extends StyleHook {
   }
 
   @override
-  double? get paddingBottom => null;
+  double? get paddingBottom {
+    return null;
+  }
 }
